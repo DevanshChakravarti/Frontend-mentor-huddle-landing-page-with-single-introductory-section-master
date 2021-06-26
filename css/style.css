@@ -52,11 +52,17 @@ section div p{
 }
 section div button{
     color: var(--primary-violet);
+    background: #fff;
     font-size: 1em;
     padding: 1rem 4rem;
     border: none;
     border-radius: 25px;
     box-shadow: 3px 3px 10px hsl(258, 53%, 17%);
+    cursor: pointer;
+}
+section div button:hover{
+    color: #fff;
+    background: var(--primary-soft-magneta);
 }
 .social-icons{
     width: auto;
@@ -73,6 +79,11 @@ section div button{
     padding: 10px;
     border: 2px solid #fff;
     border-radius: 50%;
+    cursor: pointer;
+}
+.social-icons .fab:hover{
+    color: var(--primary-soft-magneta);
+    border: 2px solid var(--primary-soft-magneta);
 }
 
 @media (max-width: 576px){
@@ -103,6 +114,7 @@ section div button{
         margin: 1rem 0 2rem;
     }
     .social-icons{
+        margin: 4rem 0;
         place-self: center;
     }
 }
