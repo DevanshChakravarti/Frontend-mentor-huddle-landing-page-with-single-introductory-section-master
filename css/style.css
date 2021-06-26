@@ -10,7 +10,8 @@
 body{
     width: 100%;
     height: 100vh;
-    background: url("./images/bg-desktop.svg"), var(--primary-violet);
+    background: url("../images/bg-desktop.svg") -120px no-repeat, var(--primary-violet);
+    background-size: cover;
     padding: 54px 80px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -18,7 +19,7 @@ header{
     width: 216px;
     height: 54px;
     padding: 8px;
-    margin: 0 0 36px;
+    margin: 0 0 25px;
 }
 header img{
     width: 100%;
@@ -32,25 +33,27 @@ main{
     place-items: center;
     grid-gap: 16px;
 }
+main img{
+    width: 100%;
+}
 section{
     width: 100%;
     height: 100%;
-    padding: 4rem 20px 0;
-    display: grid;
+    padding: 5rem 20px 0;
 }
-section div h1{
+section h1{
     color: #fff;
     font-size: 2.5em;
     line-height: 1.5em;
     font-family: 'Poppins', sans-serif;
 }
-section div p{
+section p{
     color: #fff;
     font-size: 1.15em;
     line-height: 1.5em;
     margin: 2rem 0;
 }
-section div button{
+section button{
     color: var(--primary-violet);
     background: #fff;
     font-size: 1em;
@@ -60,15 +63,20 @@ section div button{
     box-shadow: 3px 3px 10px hsl(258, 53%, 17%);
     cursor: pointer;
 }
-section div button:hover{
+section button:hover{
     color: #fff;
     background: var(--primary-soft-magneta);
+}
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 .social-icons{
     width: auto;
     height: auto;
     padding: 5px;
-    place-self: flex-end;
 }
 .social-icons .fab{
     width: 40px;
@@ -106,10 +114,10 @@ section div button:hover{
     section{
         text-align: center;
     }
-    section div h1{
+    section h1{
         font-size: 1.5em;
     }
-    section div p{
+    section p{
         font-size: 0.95em;
         margin: 1rem 0 2rem;
     }
