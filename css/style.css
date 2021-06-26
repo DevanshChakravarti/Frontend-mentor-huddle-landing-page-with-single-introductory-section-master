@@ -1,0 +1,108 @@
+:root{
+    --primary-violet: hsl(257, 40%, 49%);
+    --primary-soft-magneta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("./images/bg-desktop.svg"), var(--primary-violet);
+    padding: 54px 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 216px;
+    height: 54px;
+    padding: 8px;
+    margin: 0 0 36px;
+}
+header img{
+    width: 100%;
+    height: max-content;
+}
+main{
+    width: 100%;
+    height: 576px;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    place-items: center;
+    grid-gap: 16px;
+}
+section{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 20px 0;
+    display: grid;
+}
+section div h1{
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+section div p{
+    color: #fff;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    margin: 2rem 0;
+}
+section div button{
+    color: var(--primary-violet);
+    font-size: 1em;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px hsl(258, 53%, 17%);
+}
+.social-icons{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    place-self: flex-end;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 0.95em;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+@media (max-width: 576px){
+    body{
+        background: url("../images/bg-mobile.svg") no-repeat, var(--primary-violet);
+        padding: 1.5rem;
+    }
+    header{
+        width: 145px;
+        padding: 0;
+    }
+    main{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    main img{
+        width: 95%;
+        height: 100%;
+    }
+    section{
+        text-align: center;
+    }
+    section div h1{
+        font-size: 1.5em;
+    }
+    section div p{
+        font-size: 0.95em;
+        margin: 1rem 0 2rem;
+    }
+    .social-icons{
+        place-self: center;
+    }
+}
